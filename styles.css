@@ -125,8 +125,6 @@ main h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--navy); }
 }
 .worksite-hero {
   --hero-image: url("assets/products-hero.png");
-  --hero-mobile-image: var(--hero-image);
-  --hero-mobile-ratio: 2 / 1;
 }
 .supply-hero { --hero-image: url("assets/who-we-supply-hero.png"); }
 .about-hero { --hero-image: url("assets/about-hero.png"); }
@@ -318,9 +316,13 @@ main h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--navy); }
   .quote-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
   .quote-actions .button { padding-inline: 1rem; }
   .utility .wrap { flex-wrap: wrap; }
-  .hero { background: linear-gradient(90deg, #0b1e49, #122b67); }
+  .home-page .hero { background: linear-gradient(90deg, #0b1e49, #122b67); }
+  .worksite-hero {
+    background-image: linear-gradient(90deg, #0b1e49f5, #122b6799), var(--hero-image);
+    background-position: right center;
+  }
   .hero-copy { padding-block: 3rem; }
-  .hero::after {
+  .home-page .hero::after {
     content: "";
     display: block;
     aspect-ratio: var(--hero-mobile-ratio);
