@@ -1,0 +1,13 @@
+# Local build staging. Commit the completed dist/ directory.
+/.dist-build-*/
+
+# Local configuration, dependencies, and tooling
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
