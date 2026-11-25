@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { renderSharedLayout, renderProductCards } = require('./components.js');
 
-const origin = 'https://albassamwatertanks.ae/';
+const origin = 'https://albassmarwatertanks.ae/';
 const company = 'AL Bassmar Water Tanks';
 const logo = 'Al Bassmar Water Tanks Logo.png';
 const pages = {
@@ -134,7 +134,7 @@ publicFiles.set('sitemap.xml', sitemap);
 // Collect public assets from the emitted markup (including social images and
 // the Organization logo) and from CSS. Copy only those assets.
 const assetPaths = new Set();
-const assetReferences = /(?:https:\/\/albassamwatertanks\.ae\/)?\bassets\/[a-zA-Z0-9%._/-]+/g;
+const assetReferences = /(?:https:\/\/albassmarwatertanks\.ae\/)?\bassets\/[a-zA-Z0-9%._/-]+/g;
 for (const file of [...Object.keys(pages), 'styles.css']) {
   for (const [reference] of publicFiles.get(file).matchAll(assetReferences)) {
     const name = decodeURIComponent(new URL(reference, origin).pathname.slice(1));

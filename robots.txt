@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://albassamwatertanks.ae/sitemap.xml
+Sitemap: https://albassmarwatertanks.ae/sitemap.xml

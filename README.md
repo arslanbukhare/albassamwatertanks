@@ -1,6 +1,6 @@
 # AL Bassmar Water Tanks website
 
-This is a static website for [AL Bassmar Water Tanks](https://albassamwatertanks.ae/). The project requires Node.js locally to build the release. The production server only serves static files and does not need Node.js.
+This is a static website for [AL Bassmar Water Tanks](https://albassmarwatertanks.ae/). The project requires Node.js locally to build the release. The production server only serves static files and does not need Node.js.
 
 ## Local development
 
